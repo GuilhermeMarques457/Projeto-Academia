@@ -46,8 +46,8 @@
 /* media query 1000px */
 @media (max-width: 63em) {
   .container {
-    max-width: 110rem;
-    min-width: 90rem;
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .btn-pricing-transition-left {
@@ -73,4 +73,51 @@
 
 /* media query 900px */
 @media (max-width: 56em) {
+  .container-hero {
+    width: 108rem;
+    padding: 0;
+  }
+
+  .grid--2--cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .hero-section {
+    justify-items: center;
+    background-color: #222;
+  }
+
+  .hero-content-box {
+    width: 70%;
+    height: 70%;
+  }
+
+  .hero-section {
+    align-items: center;
+    height: 600px;
+  }
+
+  .hero-img {
+    width: 25rem;
+  }
+
+  .hero-img-box {
+    display: none;
+  }
+
+  .img-media {
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 55%;
+  }
+
+  .container {
+    padding: 0;
+    width: 100%;
+  }
 }
