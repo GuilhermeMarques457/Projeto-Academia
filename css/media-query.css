@@ -45,11 +45,6 @@
 
 /* media query 1000px */
 @media (max-width: 63em) {
-  .container {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
   .btn-pricing-transition-left {
     top: 95%;
     left: 40%;
@@ -74,7 +69,6 @@
 /* media query 900px */
 @media (max-width: 56em) {
   .container-hero {
-    width: 108rem;
     padding: 0;
   }
 
