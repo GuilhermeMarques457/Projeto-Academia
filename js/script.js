@@ -249,7 +249,7 @@ const timer = function () {
       ctaImgLeftEl.setAttribute("src", `./imgs/Cta/image${imgCount}.jpg`);
     }
     sec--;
-  }, 1000000);
+  }, 5000);
 };
 
 timer();

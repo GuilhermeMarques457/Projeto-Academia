@@ -700,7 +700,7 @@
 }
 
 .cta-imgs-box {
-  width: 300%;
+  width: 200%;
   height: 100%;
   display: flex;
   transition: all 1s;
@@ -714,7 +714,6 @@
 
 .cta-imgs img {
   width: 100%;
-  margin-top: -300px;
 }
 
 .gradient {
