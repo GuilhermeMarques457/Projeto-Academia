@@ -231,14 +231,11 @@ let sec = 5;
 const timer = function () {
   let imgCount = 1;
   let timer = setInterval(function () {
-    console.log(sec);
-
     if (sec % 2 == 0 && sec != 0) {
       imgCount++;
       ctaImgEl.classList.remove("translate-cta-img-box");
       ctaImgLeftEl.setAttribute("src", `./imgs/Cta/image${imgCount}.jpg`);
     } else if (sec % 2 === 1) {
-      console.log("par");
       imgCount++;
       ctaImgEl.classList.add("translate-cta-img-box");
       ctaImgRightEl.setAttribute("src", `./imgs/Cta/image${imgCount}.jpg`);
@@ -253,4 +250,18 @@ const timer = function () {
 };
 
 timer();
-// console.log(6 % 2);
+
+////////////////////////
+// Mobile navigation //
+////////////////////////
+
+const buttonNavigationEl = document.querySelector(".btn-navigation");
+const iconClose = document.querySelector(".icon-close");
+const iconOpen = document.querySelector(".icon-open");
+const menuNavigation = document.querySelector(".menu-navigation");
+
+buttonNavigationEl.addEventListener("click", function () {
+  iconClose.classList.toggle("icon-showed");
+  iconOpen.classList.toggle("icon-showed");
+  menuNavigation.classList.toggle("list-nav-open");
+});

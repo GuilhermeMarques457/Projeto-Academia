@@ -35,6 +35,11 @@
   color: #222;
 }
 
+/* Mobile navigation */
+.mobile-navigation-icons {
+  display: none;
+}
+
 /*******************
     Hero
 ********************/
