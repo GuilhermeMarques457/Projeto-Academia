@@ -150,3 +150,27 @@ a {
   visibility: visible !important;
   transition: all 1s;
 }
+
+.sticky {
+  animation: 0.3s header-down forwards;
+  transform: translateY(-100%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.9);
+  z-index: 3;
+  height: 12rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgb(0 0 0 / 5%);
+}
+
+@keyframes header-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

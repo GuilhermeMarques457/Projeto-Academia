@@ -88,6 +88,7 @@
     z-index: 10000;
     position: relative;
     opacity: 0;
+    cursor: pointer;
   }
 
   .icon-nav {
@@ -97,7 +98,7 @@
     top: 0;
     left: 0;
     z-index: 20;
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
 
   .icon-showed {
@@ -110,8 +111,8 @@
     left: 0;
     top: 0;
     transform: translateX(100%);
-    transition: all 1s;
-    background-color: #fafafaab;
+    transition: all 0.8s;
+    background-color: rgb(255, 255, 255, 0.8);
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -190,6 +191,6 @@
     display: block;
     position: absolute;
     left: 60%;
-    top: 55%;
+    top: 60%;
   }
 }

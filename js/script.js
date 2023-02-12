@@ -265,3 +265,43 @@ buttonNavigationEl.addEventListener("click", function () {
   iconOpen.classList.toggle("icon-showed");
   menuNavigation.classList.toggle("list-nav-open");
 });
+
+buttonNavigationEl.addEventListener("keydown", function (e) {
+  if (e.key == "Escape" && menuNavigation.classList.contains("list-nav-open")) {
+    iconClose.classList.toggle("icon-showed");
+    iconOpen.classList.toggle("icon-showed");
+    menuNavigation.classList.remove("list-nav-open");
+  }
+});
+
+//////////////////////////////////////
+////// Sticky navigation bar ////
+//////////////////////////////////////
+
+const headerEl = document.querySelector(".header");
+const heroEl = document.querySelector(".container-hero");
+const boxLogoEl = document.querySelector(".box-logo");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      headerEl.classList.add("sticky");
+      heroEl.classList.add("margin-header");
+      boxLogoEl.style.width = "12rem";
+    }
+    if (ent.isIntersecting === true) {
+      headerEl.classList.remove("sticky");
+      heroEl.classList.remove("margin-header");
+      boxLogoEl.style.width = "15rem";
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-70px",
+  }
+);
+
+observer.observe(heroEl);
