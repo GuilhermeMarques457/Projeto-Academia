@@ -321,7 +321,7 @@
 .slide {
   padding: 0 5.4rem;
   flex-shrink: 0;
-  width: 55rem;
+  width: 60rem;
   box-sizing: border-box;
 }
 
@@ -401,11 +401,11 @@
 }
 
 .translate-right-middle {
-  transform: translateX(-55rem);
+  transform: translateX(-60rem);
 }
 
 .translate-right-end {
-  transform: translateX(-110rem);
+  transform: translateX(-120rem);
 }
 
 /* Image translate */
@@ -700,12 +700,11 @@
 ********************/
 
 .cta-section {
-  padding: 9.6rem;
+  padding: 9.6rem 3.6rem;
 }
 
 .cta-box {
   height: 70rem;
-
   position: relative;
 }
 

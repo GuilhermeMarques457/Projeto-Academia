@@ -64,6 +64,9 @@
   .pricing-item.right {
     transform: translateX(185%);
   }
+  .brand-img {
+    height: 4rem;
+  }
 }
 
 /* media query 900px */
@@ -192,5 +195,73 @@
     position: absolute;
     left: 60%;
     top: 60%;
+  }
+
+  .feature-box {
+    height: auto;
+    padding: 0 4.8rem;
+  }
+
+  .feature-img-box {
+    width: auto;
+  }
+
+  .feature-img {
+    width: 100%;
+  }
+
+  .feature-content {
+    max-width: 70rem;
+  }
+
+  .slide {
+    padding: 4.8rem 5.4rem;
+    max-width: 70rem;
+  }
+
+  .translate-right-start {
+    transform: translateX(0);
+  }
+
+  .translate-right-middle {
+    transform: translateX(-70rem);
+  }
+
+  .translate-right-end {
+    transform: translateX(-140rem);
+  }
+
+  .pricing-item {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    width: 40%;
+  }
+
+  .pricing-item.highlighted {
+    opacity: 100 !important;
+    pointer-events: all !important;
+    visibility: visible !important;
+    transition: all 1s;
+    transform: translateX(50%) translateY(10%);
+  }
+
+  .tabs-box {
+    height: 100rem;
+  }
+  .exercices-box {
+    justify-self: center;
+    width: 80%;
+  }
+
+  .tabs-list {
+    overflow: hidden;
+  }
+  .exercice-list {
+    margin-bottom: 8rem;
+  }
+
+  .cta-content {
+    width: 50%;
   }
 }
