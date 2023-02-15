@@ -249,9 +249,14 @@
   .tabs-box {
     height: 100rem;
   }
+
   .exercices-box {
     justify-self: center;
     width: 80%;
+  }
+
+  .tabs-section {
+    padding: 0;
   }
 
   .tabs-list {
@@ -263,5 +268,29 @@
 
   .cta-content {
     width: 50%;
+  }
+}
+
+@media (max-width: 50em) {
+  .img-media {
+    display: none;
+  }
+
+  .brand-box {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3.2rem;
+  }
+
+  .grid--3--cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .statistic-box {
+    justify-items: center;
+  }
+
+  .item-statistic {
+    width: 55%;
+    padding: 2.4rem 0 0.8rem 0;
   }
 }
